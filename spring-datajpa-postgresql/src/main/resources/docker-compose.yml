@@ -1,0 +1,8 @@
+# Use postgres/example user/password credentials
+dbpostgresql:
+  image: postgres
+  ports:
+    - "54320:5432"
+  environment:
+    - POSTGRES_PASSWORD=password
+    - POSTGRES_USER=postgres
